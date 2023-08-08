@@ -18,6 +18,7 @@ export class Login extends BaseAbstractClass {
     try {
       const body = await this.getRequestBody();
       const token = await this.tokenGenerator.generateToken(body);
+      
       if (token) {
         this.res.write("Login is successful");
       } else {
