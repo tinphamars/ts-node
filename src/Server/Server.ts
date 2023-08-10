@@ -14,12 +14,17 @@ export class Server {
         case 'login':
           await new Login(req, res, this.authorizer).handleRequest()
           break;
+
+        case 'tsc-two':
+          res.write('Hello World');
+          break;
       
         default:
+          res.write('Page not found');
           break;
       }
       res.end();
-    }).listen(7777);
-    console.log("server is started with port", 7777)
+    }).listen(6789);
+    console.log("server is started with port", 6789)
   }
 }

@@ -15,11 +15,7 @@ export class Authorizer implements TokenGenerator {
     eventEmitter.addListener("clicked", function () {
       console.log("Something is clicked! 234234");
     });
-
-    // eventEmitter.on("clicked", function () {
-    //   console.log("Something is clicked! 111");
-    // });
-
+    
     eventEmitter.emit("clicked");
 
 
