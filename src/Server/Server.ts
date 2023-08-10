@@ -1,5 +1,4 @@
 import { Authorizer } from './../Authorization/Authorizer';
-import { TokenGenerator } from './Model';
 import { createServer, IncomingMessage, ServerResponse } from "http";
 import { Utils } from "./Utils";
 import { Login } from "./Login";
